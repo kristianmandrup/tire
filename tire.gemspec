@@ -29,26 +29,27 @@ Gem::Specification.new do |s|
   s.add_dependency "rake"
   s.add_dependency "rest-client", "~> 1.6.0"
   s.add_dependency "multi_json",  "~> 1.0"
-  s.add_dependency "activemodel", "~> 3.0"
+  s.add_dependency "activemodel", ">= 3.0"
   s.add_dependency "hashr",       "~> 0.0.16"
 
   # = Development dependencies
   #
-  s.add_development_dependency "bundler",     "~> 1.0"
+  s.add_development_dependency "bundler",     ">= 1.1"
   s.add_development_dependency "yajl-ruby",   "~> 0.8.0"
   s.add_development_dependency "shoulda"
   s.add_development_dependency "mocha"
-  s.add_development_dependency "activerecord", "~> 3.0.7"
-  s.add_development_dependency "mongoid",      "~> 2.2.1"
+  s.add_development_dependency "activerecord", ">= 3.1"
+  s.add_development_dependency "mongo",        "~> 1.6"
+  s.add_development_dependency "mongoid",      "~> 3.0"
   s.add_development_dependency "sqlite3"
-  s.add_development_dependency "supermodel"
+  # s.add_development_dependency "supermodel"
   s.add_development_dependency "curb"
 
   # These gems are not needed for CI at <http://travis-ci.org/#!/karmi/tire>
   #
   unless ENV["CI"]
     s.add_development_dependency "rdoc"
-    s.add_development_dependency "rcov"
+    s.add_development_dependency "simplecov", '>= 0.5'
     s.add_development_dependency "turn"
   end
 

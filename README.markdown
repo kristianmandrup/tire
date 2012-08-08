@@ -740,6 +740,13 @@ lightweight associations between the models.
 Please be sure to peruse the [integration test suite](https://github.com/karmi/tire/tree/master/test/integration)
 for examples of the API and _ActiveModel_ integration usage.
 
+Running test suite
+------------------------
+
+```text
+$ bundle
+$ bundle exec rake
+```
 
 Extensions and Additions
 ------------------------
